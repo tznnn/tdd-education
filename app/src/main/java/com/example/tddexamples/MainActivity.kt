@@ -14,6 +14,11 @@ import com.example.tddexamples.ui.theme.TDDExamplesTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val engine = Engine()
+        val car = Car(engine, 20.00)
+
+        car.turnOn()
+
         super.onCreate(savedInstanceState)
         setContent {
             TDDExamplesTheme {
